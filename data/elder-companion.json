@@ -1,0 +1,118 @@
+{
+  "version": 1,
+  "settings": {
+    "familyLanguage": "en-IN",
+    "shareSummaries": true,
+    "transcriptConsent": true,
+    "notifications": "unconfigured"
+  },
+  "profiles": [
+    {
+      "id": "meera",
+      "name": "Meera Iyer",
+      "initials": "MI",
+      "language": "ta-IN",
+      "familyLanguage": "en-IN",
+      "timezone": "Asia/Kolkata",
+      "phone": "+91 •••• 2381",
+      "family": "Ananya Iyer",
+      "relation": "Daughter",
+      "status": "needs-attention",
+      "lastCheckin": "Today, 8:42 AM",
+      "meal": "Breakfast · 8:30 AM"
+    },
+    {
+      "id": "arun",
+      "name": "Arun Bose",
+      "initials": "AB",
+      "language": "bn-IN",
+      "familyLanguage": "en-IN",
+      "timezone": "Asia/Kolkata",
+      "phone": "+91 •••• 9074",
+      "family": "Riya Bose",
+      "relation": "Son",
+      "status": "well",
+      "lastCheckin": "Today, 9:15 AM",
+      "meal": "Lunch · 1:00 PM"
+    },
+    {
+      "id": "p1792840280040",
+      "name": "Ujjwal Nikkar",
+      "initials": "UN",
+      "language": "en-IN",
+      "familyLanguage": "en-IN",
+      "timezone": "Asia/Kolkata",
+      "phone": "Not added",
+      "family": "Big Boss - Selmon Khan",
+      "relation": "Caregiver",
+      "status": "new",
+      "lastCheckin": "Not started",
+      "meal": "Schedule not added"
+    }
+  ],
+  "reminders": [
+    {
+      "id": "r1",
+      "profileId": "meera",
+      "type": "Medication",
+      "title": "Amlodipine",
+      "time": "8:00 AM",
+      "note": "Confirm only — no dosage advice",
+      "state": "overdue"
+    },
+    {
+      "id": "r2",
+      "profileId": "meera",
+      "type": "Appointment",
+      "title": "Dr. Narayan · follow-up",
+      "time": "Tomorrow · 11:30 AM",
+      "note": "City clinic",
+      "state": "upcoming"
+    },
+    {
+      "id": "r3",
+      "profileId": "arun",
+      "type": "Medication",
+      "title": "Morning tablets",
+      "time": "9:00 AM",
+      "note": "Confirm only",
+      "state": "done"
+    }
+  ],
+  "checkins": [
+    {
+      "id": "c1",
+      "profileId": "meera",
+      "time": "Today, 8:42 AM",
+      "mood": "A little tired",
+      "meal": "Breakfast not yet confirmed",
+      "medication": "Not confirmed",
+      "symptoms": "Reported light dizziness on standing",
+      "followUp": true,
+      "source": "Simulated conversation"
+    },
+    {
+      "id": "c2",
+      "profileId": "arun",
+      "time": "Today, 9:15 AM",
+      "mood": "Good, spoke with neighbour",
+      "meal": "Breakfast confirmed",
+      "medication": "Confirmed",
+      "symptoms": "None reported",
+      "followUp": false,
+      "source": "Simulated conversation"
+    }
+  ],
+  "alerts": [
+    {
+      "id": "a1",
+      "profileId": "meera",
+      "level": "attention",
+      "title": "Follow up with Meera today",
+      "reason": "She reported light dizziness and medication remains unconfirmed.",
+      "action": "Ask a caregiver to check in. If symptoms are severe or sudden, contact local emergency services.",
+      "at": "8:42 AM",
+      "source": "Reported + rule-based flag"
+    }
+  ]
+}
